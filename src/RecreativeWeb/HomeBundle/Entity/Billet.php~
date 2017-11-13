@@ -1,0 +1,39 @@
+<?php
+
+namespace RecreativeWeb\HomeBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="billets")
+ */
+class Billet
+{
+	/**
+	 * @ORM\Id
+	 * @ORM\Column(type="integer")
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	private $id;
+
+	/**
+	 * @ORM\Column(type="string",length=255)
+	 */
+	private $titre;
+
+	/**
+	 * @ORM\Column(type="text")
+	 */
+	private $resume;
+
+	/**
+	 * @ORM\Column(type="text")
+	 */
+	private $contenu;
+
+	/**
+	 * @ORM\Column(type="datetime")
+	 */
+	private $date_publication;
+}
