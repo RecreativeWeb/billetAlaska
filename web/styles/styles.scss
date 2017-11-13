@@ -1,0 +1,40 @@
+@mixin titreBillet($taille, $couleur, $epaisseur) {
+	font-size: $taille;
+	color: $couleur;
+	font-weight: $epaisseur;
+}
+
+@import 'hidden';
+@import 'header';
+@import 'login';
+@import 'adminAuteur';
+@import 'news';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	body{
+		background-image: url('../images/livreLarge.jpg');
+		background-attachment: fixed;
+		background-position: right top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		header{
+			width: 100%;
+			background-color: rgba(255,255,255,0.9);
+		}
+		main{
+			width: 100%;
+			height: 100vh;
+			margin: 0 auto;
+			background-color: rgba(255,255,255,0.7);
+			section{
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.news{
+  padding: 8rem;
+  h3{
+    @include titreBillet(1.5rem,black, 900);
+  }
+  .titreBillet{
+    @include titreBillet(1.2rem,#263238, 900);
+  }
+  table{
+    margin-bottom: 2rem;
+  }
+}
+
