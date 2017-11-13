@@ -1,1 +1,12 @@
 {% extends 'base.html.twig' %}
+
+{% block main %}
+	<div class="main">
+	{% for e in billets %}
+		<article>
+			<h3>{{ e.titre }}</h3>
+			<p>{{ e.resume }}</p>
+		</article>
+	{% endfor %}
+	</div>
+{% endblock %}
